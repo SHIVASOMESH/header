@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #FFF3E2;
+}
+
+header{
+    background-color: #f3d374;
+}
+.container{
+    margin: 0px 120px;
+}
+.padding{
+    padding: 13px 0px;
+}
+.head-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    flex: 0.5;
+}
+.logo h1 a{
+    color: #E74646;
+    font-family: Arial;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.nav{
+    flex: 1;
+}
+.nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease;
+    padding: 10px;
+}
+.nav ul li a{
+    color: #E74646;
+    transition: 0.3s ease-in-out;
+}
+.nav ul li a:hover{
+    color: #3C486B;
+}
+.nav ul li a:hover span{
+    color: #3C486B;
+    transform: rotate(180deg);
+}
+.nav .ser-nav{
+    position: relative;
+}
+.nav .ser-nav .inner-nav{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -19px;
+}
+.nav .ser-nav:hover .inner-nav{
+    display: block;
+}
+.nav .ser-nav .inner-nav li{
+    background-color: #3C486B;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid #ffffff;
+}
+.nav .ser-nav .inner-nav li a{
+    color: #ffffff;
+}
+.nav .ser-nav .inner-nav li:hover{
+    background-color: #f3d374;
+}
+.nav .ser-nav .inner-nav li a:hover{
+    color: #3C486B;
+}
+.nav .ser-nav .inner-nav .inner-head{
+    position: relative;
+}
+.nav .ser-nav .inner-nav .inner-head .mini-inner{
+    position: absolute;
+    display: none;
+}
+.nav .ser-nav .inner-nav .inner-head:hover .mini-inner{
+    display: block;
+    top: 0;
+    left: 119px;
+}
+.nav .ser-nav .inner-nav .inner-head:hover .mini-inner li{
+    height: 40px;
+    width: 150px;
+}
+.nav .ser-nav .inner-nav .inner-head:hover .mini-inner li:hover{
+    background-color: #454545;
+}
+.nav .ser-nav .inner-nav .inner-head:hover .mini-inner li a:hover{
+    color: #f3d374;
+}
+.theme{
+    flex: 0.5;
+    float: right;
+}
+.theme span{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #E74646;
+    background-color: transparent;
+    float: right;
+    border: 2px solid #E74646;
+    margin-left: 15px;
+    transition: .3s ease-in-out;
+}
+.theme span:hover{
+    color: #3C486B;
+    border: 2px solid #3C486B;
+}
